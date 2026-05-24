@@ -24,7 +24,9 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="w-full bg-white" style={{ borderTop: '0.5px solid rgba(0,0,0,0.06)' }}>
+    <section id="services" className="relative w-full overflow-hidden bg-white" style={{ borderTop: '0.5px solid rgba(0,0,0,0.06)' }}>
+      <div aria-hidden className="pointer-events-none absolute left-[-7%] top-[15%] hidden h-[20vw] w-[20vw] max-h-[260px] max-w-[260px] rounded-full bg-oasis-accent opacity-[0.07] lg:block" />
+      <div aria-hidden className="pointer-events-none absolute right-[-4%] bottom-[10%] hidden h-[12vw] w-[12vw] max-h-[150px] max-w-[150px] rounded-full bg-oasis-accent opacity-[0.09] lg:block" />
       <div className="mx-auto max-w-[1200px] px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-28">
         <p className="mb-2 text-[11px] uppercase tracking-[0.12em] text-oasis-hint">Services</p>
         <h2 className="mb-10 font-serif text-[34px] font-normal tracking-[-0.02em] sm:text-[44px] lg:mb-14 lg:text-[58px]">

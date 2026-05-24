@@ -7,7 +7,9 @@ const steps = [
 
 export default function Process() {
   return (
-    <section id="process" className="w-full bg-oasis-bg" style={{ borderTop: '0.5px solid rgba(0,0,0,0.06)' }}>
+    <section id="process" className="relative w-full overflow-hidden bg-oasis-bg" style={{ borderTop: '0.5px solid rgba(0,0,0,0.06)' }}>
+      <div aria-hidden className="pointer-events-none absolute right-[-5%] bottom-[8%] hidden h-[24vw] w-[24vw] max-h-[320px] max-w-[320px] rounded-full bg-oasis-accent opacity-[0.07] lg:block" />
+      <div aria-hidden className="pointer-events-none absolute left-[-4%] top-[20%] hidden h-[11vw] w-[11vw] max-h-[140px] max-w-[140px] rounded-full bg-oasis-accent opacity-[0.09] lg:block" />
       <div className="mx-auto max-w-[1200px] px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-28">
         <p className="mb-2 text-[11px] uppercase tracking-[0.12em] text-oasis-hint">How it works</p>
         <h2 className="mb-10 font-serif text-[34px] font-normal tracking-[-0.02em] sm:text-[44px] lg:mb-14 lg:text-[58px]">
