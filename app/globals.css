@@ -1,26 +1,26 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), Georgia, serif;
+
+  --color-oasis-bg: #FAFAF7;
+  --color-oasis-surface: #FFFFFF;
+  --color-oasis-ink: #1A1A1A;
+  --color-oasis-muted: #555555;
+  --color-oasis-hint: #888888;
+  --color-oasis-accent: #FF6B35;
+  --color-oasis-accent-soft: #FFF1EB;
+  --color-oasis-accent-tint: #FFFBF8;
+  --color-oasis-chip: #F1EFE8;
+  --color-oasis-success: #22C55E;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-marquee {
+  animation: marquee 120s linear infinite;
 }
