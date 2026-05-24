@@ -1,4 +1,5 @@
 import type { Project } from '@/lib/projects';
+import { MediaCarousel } from './MediaCarousel';
 
 function StatusBadge({ status }: { status: Project['status'] }) {
   if (status === 'live')
@@ -27,7 +28,9 @@ export function FeaturedCard({ project }: { project: Project }) {
           className="w-full overflow-hidden rounded-xl"
           style={{ boxShadow: '0 0 0 1px rgba(0,0,0,0.06) inset' }}
         >
-          {media?.type === 'video' ? (
+          {project.gallery && project.gallery.length > 0 ? (
+            <MediaCarousel images={project.gallery} title={project.title} />
+          ) : media?.type === 'video' ? (
             <video src={media.src} autoPlay muted loop playsInline className="w-full" style={{ display: 'block' }} />
           ) : media?.type === 'image' ? (
             <img src={media.src} alt={media.alt ?? project.title} className="w-full" style={{ display: 'block' }} />

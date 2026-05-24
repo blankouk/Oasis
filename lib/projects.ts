@@ -12,6 +12,7 @@ export type Project = {
     src: string;
     alt?: string;
   };
+  gallery?: Array<{ src: string; alt?: string }>;
   placeholderEmoji?: string;
 };
 
@@ -30,6 +31,19 @@ export const projects: Project[] = [
       src: '/vectra-project.jpg',
       alt: 'Vectra — news aggregator screenshot',
     },
+  },
+  {
+    id: 'maison-oriel',
+    title: 'Maison Oriel',
+    description: 'Fine dining restaurant and wine bar in Marseille. Slow cooking, low-intervention wines, French-Mediterranean cuisine.',
+    status: 'live',
+    category: 'Restaurant landing page',
+    stack: ['Next.js', 'Tailwind CSS'],
+    url: 'https://maison-oriel.vercel.app/',
+    gallery: [
+      { src: '/maison-oriel-home.jpg', alt: 'Maison Oriel — main page' },
+      { src: '/maison-oriel-menu.jpg', alt: 'Maison Oriel — menu' },
+    ],
   },
   {
     id: 'kotleta',
