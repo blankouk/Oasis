@@ -2,8 +2,8 @@ import { projects } from '@/lib/projects';
 import { FeaturedCard, PlaceholderCard } from './ProjectCard';
 
 export default function Projects() {
-  const featured = projects.find((p) => p.featured);
-  const placeholders = projects.filter((p) => !p.featured);
+  const live = projects.filter((p) => p.status === 'live' || p.status === 'in-dev');
+  const comingSoon = projects.filter((p) => p.status === 'coming-soon');
 
   return (
     <section id="work" className="w-full bg-oasis-bg" style={{ borderTop: '0.5px solid rgba(0,0,0,0.06)' }}>
@@ -18,13 +18,17 @@ export default function Projects() {
           <span className="hidden text-[13px] text-oasis-hint sm:block">2025 — 2026</span>
         </div>
 
-        {featured && <FeaturedCard project={featured} />}
+        {live.map((p) => (
+          <FeaturedCard key={p.id} project={p} />
+        ))}
 
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-5">
-          {placeholders.map((p) => (
-            <PlaceholderCard key={p.id} project={p} />
-          ))}
-        </div>
+        {comingSoon.length > 0 && (
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:gap-5">
+            {comingSoon.map((p) => (
+              <PlaceholderCard key={p.id} project={p} />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

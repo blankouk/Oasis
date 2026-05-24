@@ -32,6 +32,20 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 'kotleta',
+    title: 'Kotleta & Co.',
+    description: 'Specialty coffee bar and all-day brunch kitchen in Saint Petersburg. Slow coffee, kind mornings, warm kitchen.',
+    status: 'live',
+    category: 'Café landing page',
+    stack: ['Next.js', 'Tailwind CSS'],
+    url: 'https://kotleta-co-cafe.vercel.app/',
+    media: {
+      type: 'image',
+      src: '/kotleta-project.jpg',
+      alt: 'Kotleta & Co. — café landing page screenshot',
+    },
+  },
+  {
     id: 'cafe-landing',
     title: 'Café landing',
     description: 'Menu, hours, reservations.',
