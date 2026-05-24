@@ -22,10 +22,10 @@ export function FeaturedCard({ project }: { project: Project }) {
   const inner = (
     <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.1fr]">
       {/* Left: dark framed image */}
-      <div className="flex items-stretch bg-[#0E0E14] p-4 lg:rounded-l-2xl lg:p-5">
+      <div className="flex items-stretch bg-oasis-chip p-4 lg:rounded-l-2xl lg:p-5">
         <div
           className="w-full overflow-hidden rounded-xl"
-          style={{ boxShadow: '0 0 0 1px rgba(255,255,255,0.06) inset' }}
+          style={{ boxShadow: '0 0 0 1px rgba(0,0,0,0.06) inset' }}
         >
           {media?.type === 'video' ? (
             <video src={media.src} autoPlay muted loop playsInline className="w-full" style={{ display: 'block' }} />
