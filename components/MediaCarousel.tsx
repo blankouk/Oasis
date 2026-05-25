@@ -25,7 +25,7 @@ export function MediaCarousel({ images, title }: Props) {
         key={images[idx].src}
         src={images[idx].src}
         alt={images[idx].alt ?? title}
-        className="absolute inset-0 h-full w-full animate-[fadeIn_0.35s_ease-out]"
+        className="absolute inset-0 h-full w-full animate-[fadeIn_0.35s_ease-out] transition-transform duration-700 ease-out group-hover:scale-[1.03]"
         style={{ objectFit: 'cover', display: 'block' }}
       />
 
