@@ -9,20 +9,7 @@ export default function Projects() {
     <section id="work" className="relative w-full overflow-hidden bg-oasis-bg" style={{ borderTop: '0.5px solid rgba(0,0,0,0.06)' }}>
       <div aria-hidden className="pointer-events-none absolute right-[-6%] top-[8%] hidden h-[22vw] w-[22vw] max-h-[300px] max-w-[300px] rounded-full bg-oasis-accent opacity-[0.07] lg:block" />
       <div aria-hidden className="pointer-events-none absolute left-[-5%] bottom-[12%] hidden h-[14vw] w-[14vw] max-h-[180px] max-w-[180px] rounded-full bg-oasis-accent opacity-[0.10] lg:block" />
-      {/* Left margin hint — desktop only */}
-      <div aria-hidden className="pointer-events-none absolute left-5 top-1/2 hidden -translate-y-1/2 flex-col items-center gap-3 lg:flex xl:left-8">
-        <div className="h-16 w-px bg-oasis-accent opacity-30" />
-        <div
-          className="whitespace-nowrap text-[10px] font-medium uppercase tracking-[0.18em] text-oasis-accent opacity-60"
-          style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
-        >
-          Click to view live sites
-        </div>
-        <div className="h-16 w-px bg-oasis-accent opacity-30" />
-        <span className="text-[14px] text-oasis-accent opacity-50">↓</span>
-      </div>
-
-      <div className="mx-auto max-w-[1200px] px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-28">
+<div className="mx-auto max-w-[1200px] px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-28">
         <div className="mb-8 flex items-end justify-between lg:mb-12">
           <div>
             <p className="mb-2 text-[11px] uppercase tracking-[0.12em] text-oasis-hint">Selected work</p>
