@@ -73,6 +73,20 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: 'mirra',
+    title: 'Mirra',
+    description: 'Sleep and wellness app landing page. Guided breathing, ambient soundscapes, sleep stories — calm by design, no streaks, no guilt.',
+    status: 'live',
+    category: 'App landing page',
+    stack: ['Next.js', 'Tailwind CSS'],
+    url: 'https://mirra-sleep.vercel.app/',
+    media: {
+      type: 'image',
+      src: '/mirra-home.jpg',
+      alt: 'Mirra — sleep app landing page',
+    },
+  },
+  {
     id: 'kotleta',
     title: 'Kotleta & Co.',
     description: 'Specialty coffee bar and all-day brunch kitchen in Saint Petersburg. Slow coffee, kind mornings, warm kitchen.',
