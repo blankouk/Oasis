@@ -28,8 +28,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`}>
-      <body className="overflow-x-hidden bg-oasis-bg text-oasis-ink antialiased">
+    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`} style={{ overflowX: 'clip' }}>
+      <body className="bg-oasis-bg text-oasis-ink antialiased" style={{ overflowX: 'clip' }}>
         {children}
       </body>
     </html>
