@@ -10,12 +10,6 @@ type Props = {
 export function MediaCarousel({ images, title }: Props) {
   const [idx, setIdx] = useState(0);
 
-  if (images.length === 1) {
-    return (
-      <img src={images[0].src} alt={images[0].alt ?? title} className="w-full" style={{ display: 'block' }} />
-    );
-  }
-
   const prev = (e: React.MouseEvent) => {
     e.preventDefault();
     setIdx((i) => (i - 1 + images.length) % images.length);
@@ -26,12 +20,12 @@ export function MediaCarousel({ images, title }: Props) {
   };
 
   return (
-    <div className="relative select-none">
+    <div className="relative select-none" style={{ aspectRatio: '16/10' }}>
       <img
         src={images[idx].src}
         alt={images[idx].alt ?? title}
-        className="w-full"
-        style={{ display: 'block' }}
+        className="absolute inset-0 h-full w-full"
+        style={{ objectFit: 'cover', display: 'block' }}
       />
 
       {/* Arrows */}
