@@ -33,6 +33,20 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 'ironworks',
+    title: 'Ironworks Boxing Club',
+    description: 'London boxing gym website. Coaching, schedule, membership tiers — honest, no-frills, community-first.',
+    status: 'live',
+    category: 'Gym landing page',
+    stack: ['Next.js', 'Tailwind CSS'],
+    url: 'https://ironworks-two.vercel.app/',
+    media: {
+      type: 'image',
+      src: '/ironworks-home.jpg',
+      alt: 'Ironworks Boxing Club — homepage screenshot',
+    },
+  },
+  {
     id: 'maison-oriel',
     title: 'Maison Oriel',
     description: 'Fine dining restaurant and wine bar in Marseille. Slow cooking, low-intervention wines, French-Mediterranean cuisine.',
