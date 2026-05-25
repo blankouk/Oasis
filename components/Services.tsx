@@ -1,7 +1,7 @@
 const services = [
   {
     name: 'Landing page',
-    price: 'from £200',
+    price: 'from £400',
     priceColor: true,
     description: '1–3 sections, responsive, fast. Perfect for showcasing a product or idea.',
     popular: false,

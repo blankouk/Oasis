@@ -61,7 +61,13 @@ export default function ContactForm() {
 
             <div>
               <label htmlFor="type" className="sr-only">Project type</label>
-              <input id="type" name="type" type="text" placeholder="What do you need? (landing page, web app, other...)" className={fieldClass} style={fieldStyle} />
+              <select id="type" name="type" className={fieldClass} style={fieldStyle}>
+                <option value="" disabled selected>Project type</option>
+                <option value="Landing page">Landing page</option>
+                <option value="Web app">Web app</option>
+                <option value="Not sure yet">Not sure yet</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
 
             <div>

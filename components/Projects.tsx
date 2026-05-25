@@ -16,6 +16,7 @@ export default function Projects() {
             <h2 className="font-serif text-[34px] font-normal tracking-[-0.02em] sm:text-[44px] lg:text-[58px]">
               What we've built
             </h2>
+            <p className="mt-3 text-[13px] text-oasis-muted lg:text-[14px]">Personal projects & concepts — demonstrating what we can build for you.</p>
           </div>
           <span className="hidden text-[13px] text-oasis-hint sm:block">2025 — 2026</span>
         </div>

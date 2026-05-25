@@ -2,7 +2,7 @@ const steps = [
   { num: '01', title: 'Chat',   desc: 'Tell me about your idea, goals, and budget. No commitment needed.' },
   { num: '02', title: 'Plan',   desc: 'I send a clear quote, timeline, and scope. No surprises.' },
   { num: '03', title: 'Build',  desc: 'I build it, you see progress every week.' },
-  { num: '04', title: 'Launch', desc: 'Ship live, plus 14 days of fixes included.' },
+  { num: '04', title: 'Launch', desc: 'Ship live, plus 14 days of bug fixes included (not new features).' },
 ];
 
 export default function Process() {
