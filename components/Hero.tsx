@@ -4,11 +4,27 @@ export default function Hero() {
       {/* Decorative blobs — % based so they scale at any viewport */}
       <div
         aria-hidden
-        className="pointer-events-none absolute right-[-5%] top-[5%] h-[45vw] w-[45vw] max-h-[520px] max-w-[520px] rounded-full bg-oasis-accent opacity-[0.07]"
+        className="pointer-events-none absolute right-[-5%] top-[5%] h-[45vw] w-[45vw] max-h-[520px] max-w-[520px] rounded-full bg-oasis-accent animate-blob-strong"
       />
       <div
         aria-hidden
-        className="pointer-events-none absolute right-[14%] top-[55%] h-[16vw] w-[16vw] max-h-[180px] max-w-[180px] rounded-full bg-oasis-accent opacity-[0.13]"
+        className="pointer-events-none absolute right-[14%] top-[55%] h-[16vw] w-[16vw] max-h-[180px] max-w-[180px] rounded-full bg-oasis-accent animate-blob-strong"
+        style={{ animationDelay: '2.5s' }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-[-8%] bottom-[12%] hidden h-[22vw] w-[22vw] max-h-[280px] max-w-[280px] rounded-full bg-oasis-accent animate-blob lg:block"
+        style={{ animationDelay: '4s' }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-[42%] top-[8%] hidden h-[7vw] w-[7vw] max-h-[90px] max-w-[90px] rounded-full bg-oasis-accent animate-blob lg:block"
+        style={{ animationDelay: '1s' }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute left-[35%] bottom-[8%] hidden h-[5vw] w-[5vw] max-h-[60px] max-w-[60px] rounded-full bg-oasis-accent animate-blob lg:block"
+        style={{ animationDelay: '6s' }}
       />
 
       <div className="mx-auto max-w-[1200px] px-6 pb-20 pt-16 sm:px-10 sm:pb-24 sm:pt-20 lg:px-16 lg:pb-32 lg:pt-28">

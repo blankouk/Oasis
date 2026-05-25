@@ -2,8 +2,10 @@ export default function CTABand() {
   return (
     <section className="relative w-full overflow-hidden bg-oasis-accent">
       {/* Decorative circles — % based */}
-      <div aria-hidden className="pointer-events-none absolute -bottom-[8%] right-[5%] h-[35vw] w-[35vw] max-h-[380px] max-w-[380px] rounded-full bg-white opacity-[0.06]" />
-      <div aria-hidden className="pointer-events-none absolute right-[28%] top-[-20%] h-[20vw] w-[20vw] max-h-[200px] max-w-[200px] rounded-full bg-white opacity-[0.08]" />
+      <div aria-hidden className="pointer-events-none absolute -bottom-[8%] right-[5%] h-[35vw] w-[35vw] max-h-[380px] max-w-[380px] rounded-full bg-white animate-blob-white" />
+      <div aria-hidden className="pointer-events-none absolute right-[28%] top-[-20%] h-[20vw] w-[20vw] max-h-[200px] max-w-[200px] rounded-full bg-white animate-blob-white" style={{ animationDelay: '3s' }} />
+      <div aria-hidden className="pointer-events-none absolute left-[8%] top-[15%] hidden h-[12vw] w-[12vw] max-h-[140px] max-w-[140px] rounded-full bg-white animate-blob-white lg:block" style={{ animationDelay: '5s' }} />
+      <div aria-hidden className="pointer-events-none absolute left-[42%] bottom-[20%] hidden h-[5vw] w-[5vw] max-h-[60px] max-w-[60px] rounded-full bg-white animate-blob-white lg:block" style={{ animationDelay: '1.5s' }} />
 
       <div className="mx-auto max-w-[1200px] px-6 py-16 text-white sm:px-10 sm:py-20 lg:px-16 lg:py-28">
         <p className="mb-3 text-[11px] uppercase tracking-[0.18em] opacity-80 lg:text-[12px]">
