@@ -33,11 +33,10 @@ export const projects: Project[] = [
     stack: ['Next.js', 'Postgres', 'Supabase'],
     featured: true,
     url: 'https://vectra-blue.vercel.app/',
-    media: {
-      type: 'image',
-      src: '/vectra-project.jpg',
-      alt: 'Vectra — news aggregator screenshot',
-    },
+    gallery: [
+      { src: '/vectra-project.jpg', alt: 'Vectra — homepage' },
+      { src: '/vectra-2.jpg', alt: 'Vectra — feed' },
+    ],
     caseStudy: {
       brief: 'A single feed for readers who track many topics across many sources — without the noise or the tab overload.',
       build: 'Pulling from 20+ sources means inconsistent formats and duplicate stories. Built a normalisation layer with Postgres and a filtering UI that stays out of the way.',
