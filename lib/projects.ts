@@ -33,6 +33,19 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 'stryde',
+    title: 'Stryde',
+    description: 'Luxury footwear & essentials brand. Hand-crafted in Portugal, minimalist editorial aesthetic.',
+    status: 'live',
+    category: 'E-commerce landing page',
+    stack: ['Next.js', 'Tailwind CSS'],
+    url: 'https://stryde-theta.vercel.app/',
+    gallery: [
+      { src: '/stryde-home.jpg', alt: 'Stryde — homepage' },
+      { src: '/stryde-2.jpg', alt: 'Stryde — products' },
+    ],
+  },
+  {
     id: 'ironworks',
     title: 'Ironworks Boxing Club',
     description: 'London boxing gym website. Coaching, schedule, membership tiers — honest, no-frills, community-first.',
