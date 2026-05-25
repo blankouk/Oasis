@@ -1,3 +1,9 @@
+export type CaseStudy = {
+  brief: string;
+  build: string;
+  result: string;
+};
+
 export type Project = {
   id: string;
   title: string;
@@ -14,6 +20,7 @@ export type Project = {
   };
   gallery?: Array<{ src: string; alt?: string }>;
   placeholderEmoji?: string;
+  caseStudy?: CaseStudy;
 };
 
 export const projects: Project[] = [
@@ -31,6 +38,11 @@ export const projects: Project[] = [
       src: '/vectra-project.jpg',
       alt: 'Vectra — news aggregator screenshot',
     },
+    caseStudy: {
+      brief: 'A single feed for readers who track many topics across many sources — without the noise or the tab overload.',
+      build: 'Pulling from 20+ sources means inconsistent formats and duplicate stories. Built a normalisation layer with Postgres and a filtering UI that stays out of the way.',
+      result: 'A fast, filterable reader that feels quiet even when the news isn\'t. One place, all your sources.',
+    },
   },
   {
     id: 'stryde',
@@ -44,6 +56,11 @@ export const projects: Project[] = [
       { src: '/stryde-home.jpg', alt: 'Stryde — homepage' },
       { src: '/stryde-2.jpg', alt: 'Stryde — products' },
     ],
+    caseStudy: {
+      brief: 'Launch a luxury footwear brand with an editorial feel — not a typical e-commerce grid, but a visual statement.',
+      build: 'Minimalism in fashion can easily feel sterile. The challenge was communicating craft and premium quality through restraint — every spacing decision, every type choice had to earn its place.',
+      result: 'A landing that positions Stryde alongside high-end editorial brands before a single product is clicked.',
+    },
   },
   {
     id: 'ironworks',
@@ -58,6 +75,11 @@ export const projects: Project[] = [
       src: '/ironworks-home.jpg',
       alt: 'Ironworks Boxing Club — homepage screenshot',
     },
+    caseStudy: {
+      brief: 'Give a community boxing gym a web presence that\'s honest, direct, and welcoming to all levels — not just the regulars.',
+      build: 'Most gym sites are either too corporate or too rough. Ironworks needed to feel real — gritty but not intimidating. Bold typography, clear schedule, transparent membership pricing.',
+      result: 'Clean information architecture that attracts both first-timers and serious fighters. The tone does as much work as the layout.',
+    },
   },
   {
     id: 'maison-oriel',
@@ -71,6 +93,11 @@ export const projects: Project[] = [
       { src: '/maison-oriel-home.jpg', alt: 'Maison Oriel — main page' },
       { src: '/maison-oriel-menu.jpg', alt: 'Maison Oriel — menu' },
     ],
+    caseStudy: {
+      brief: 'Build an online presence for a fine dining restaurant that feels as considered as the menu — not just a booking widget with a logo.',
+      build: 'Restaurant sites often feel transactional. Maison Oriel needed to communicate atmosphere before you look at the menu. Warm editorial palette, unhurried layout, typography that breathes.',
+      result: 'An editorial experience that puts you in the room. Warm, considered, and impossible to skim.',
+    },
   },
   {
     id: 'mirra',
@@ -85,6 +112,11 @@ export const projects: Project[] = [
       src: '/mirra-home.jpg',
       alt: 'Mirra — sleep app landing page',
     },
+    caseStudy: {
+      brief: 'Build a calming product landing for an app that\'s deliberately anti-app — no streaks, no gamification, just rest.',
+      build: 'Almost every wellness app landing looks the same: dark mode, glowing orbs, bold claims. Mirra needed to look like it meant what it said — quiet, spacious, genuinely restful.',
+      result: 'A landing that communicates the product\'s philosophy before the user reads a single word.',
+    },
   },
   {
     id: 'kotleta',
@@ -98,6 +130,11 @@ export const projects: Project[] = [
       type: 'image',
       src: '/kotleta-project.jpg',
       alt: 'Kotleta & Co. — café landing page screenshot',
+    },
+    caseStudy: {
+      brief: 'Create a warm digital home for a specialty café that felt handcrafted and specific — not another coffee template.',
+      build: 'Coffee culture has a visual language that quickly goes generic. The challenge was being specific to Kotleta: the neighbourhood, the kitchen, the vibe. Warm tones, relaxed copy, real character.',
+      result: 'A cosy, characterful landing that reads like a regular wrote it — because the best cafés always feel personal.',
     },
   },
   {

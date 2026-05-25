@@ -1,5 +1,5 @@
 import { projects } from '@/lib/projects';
-import { FeaturedCard, PlaceholderCard } from './ProjectCard';
+import { ProjectsClient } from './ProjectsClient';
 
 export default function Projects() {
   const live = projects.filter((p) => p.status === 'live' || p.status === 'in-dev');
@@ -21,19 +21,7 @@ export default function Projects() {
           <span className="hidden text-[13px] text-oasis-hint sm:block">2025 — 2026</span>
         </div>
 
-        <div className="space-y-4 lg:space-y-5">
-          {live.map((p) => (
-            <FeaturedCard key={p.id} project={p} />
-          ))}
-        </div>
-
-        {comingSoon.length > 0 && (
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 lg:mt-16 lg:gap-5">
-            {comingSoon.map((p) => (
-              <PlaceholderCard key={p.id} project={p} />
-            ))}
-          </div>
-        )}
+        <ProjectsClient live={live} comingSoon={comingSoon} />
       </div>
     </section>
   );
