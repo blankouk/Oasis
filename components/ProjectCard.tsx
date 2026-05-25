@@ -74,7 +74,7 @@ export function FeaturedCard({ project }: { project: Project }) {
     </div>
   );
 
-  const cardClass = "overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-xl";
+  const cardClass = "block overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-xl";
   const cardStyle = { border: '0.5px solid rgba(0,0,0,0.08)' };
 
   if (project.url) {
