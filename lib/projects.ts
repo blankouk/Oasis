@@ -119,6 +119,25 @@ export const projects: Project[] = [
     },
   },
   {
+    id: 'dental',
+    title: 'Aldwych Dental',
+    description: 'Private dental clinic in central London. Clean, trust-first design with transparent pricing, team bios, and online booking.',
+    status: 'live',
+    category: 'Medical landing page',
+    stack: ['Next.js', 'Tailwind CSS'],
+    url: 'https://dental-center-three.vercel.app/',
+    gallery: [
+      { src: '/dental-1.jpg', alt: 'Aldwych Dental — homepage' },
+      { src: '/dental-2.jpg', alt: 'Aldwych Dental — services' },
+      { src: '/dental-3.jpg', alt: 'Aldwych Dental — team' },
+    ],
+    caseStudy: {
+      brief: 'Build a modern website for a private London dental practice that converts anxious patients into confident bookings.',
+      build: 'Healthcare sites live or die on trust. The challenge was balancing clinical credibility with a warm, approachable tone — clear pricing, real team photos, and a booking flow that doesn\'t feel like a form.',
+      result: 'A professional, patient-first site that addresses anxiety before it forms — with transparent fees and a calm aesthetic that reflects the clinic itself.',
+    },
+  },
+  {
     id: 'kotleta',
     title: 'Kotleta & Co.',
     description: 'Specialty coffee bar and all-day brunch kitchen in Saint Petersburg. Slow coffee, kind mornings, warm kitchen.',
