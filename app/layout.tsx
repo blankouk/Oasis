@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     description: 'Web things, crafted with care.',
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Oasis Studio',
+    description: 'Web things, crafted with care.',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
