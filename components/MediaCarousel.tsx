@@ -22,23 +22,24 @@ export function MediaCarousel({ images, title }: Props) {
   return (
     <div className="relative select-none" style={{ aspectRatio: '16/10' }}>
       <img
+        key={images[idx].src}
         src={images[idx].src}
         alt={images[idx].alt ?? title}
-        className="absolute inset-0 h-full w-full"
+        className="absolute inset-0 h-full w-full animate-[fadeIn_0.35s_ease-out]"
         style={{ objectFit: 'cover', display: 'block' }}
       />
 
       {/* Arrows */}
       <button
         onClick={prev}
-        className="absolute left-2 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-oasis-ink shadow-sm backdrop-blur-sm transition-opacity hover:opacity-100 opacity-70 lg:h-9 lg:w-9"
+        className="absolute left-2 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-oasis-ink opacity-70 shadow-sm backdrop-blur-sm transition-all duration-200 ease-out hover:scale-110 hover:bg-white hover:opacity-100 hover:shadow-md lg:h-9 lg:w-9"
         aria-label="Previous image"
       >
         ←
       </button>
       <button
         onClick={next}
-        className="absolute right-2 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-oasis-ink shadow-sm backdrop-blur-sm transition-opacity hover:opacity-100 opacity-70 lg:h-9 lg:w-9"
+        className="absolute right-2 top-1/2 -translate-y-1/2 flex h-8 w-8 items-center justify-center rounded-full bg-white/80 text-oasis-ink opacity-70 shadow-sm backdrop-blur-sm transition-all duration-200 ease-out hover:scale-110 hover:bg-white hover:opacity-100 hover:shadow-md lg:h-9 lg:w-9"
         aria-label="Next image"
       >
         →

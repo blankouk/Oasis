@@ -22,10 +22,10 @@ export default function Process() {
           {steps.map((s) => (
             <div
               key={s.num}
-              className="rounded-2xl bg-white p-5 lg:p-7"
+              className="group rounded-2xl bg-white p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg lg:p-7"
               style={{ border: '0.5px solid rgba(0,0,0,0.08)' }}
             >
-              <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-oasis-accent text-[12px] font-medium text-white lg:mb-5 lg:h-11 lg:w-11 lg:text-[13px]">
+              <div className="mb-4 flex h-9 w-9 items-center justify-center rounded-full bg-oasis-accent text-[12px] font-medium text-white transition-transform duration-300 ease-out group-hover:scale-110 group-hover:rotate-[8deg] lg:mb-5 lg:h-11 lg:w-11 lg:text-[13px]">
                 {s.num}
               </div>
               <div className="mb-2 text-[14px] font-medium lg:text-[16px]">{s.title}</div>

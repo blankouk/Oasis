@@ -4,8 +4,12 @@ import { MediaCarousel } from './MediaCarousel';
 function StatusBadge({ status }: { status: Project['status'] }) {
   if (status === 'live')
     return (
-      <span className="rounded-[4px] bg-oasis-accent-soft px-2.5 py-1 text-[11px] font-medium text-oasis-accent">
-        ● Live
+      <span className="inline-flex items-center gap-1.5 rounded-[4px] bg-oasis-accent-soft px-2.5 py-1 text-[11px] font-medium text-oasis-accent">
+        <span className="relative flex h-1.5 w-1.5">
+          <span className="absolute inline-flex h-full w-full rounded-full bg-oasis-accent animate-live-ping" />
+          <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-oasis-accent" />
+        </span>
+        Live
       </span>
     );
   if (status === 'in-dev')
@@ -28,7 +32,7 @@ export function FeaturedCard({
 
   return (
     <div
-      className="block overflow-hidden rounded-2xl bg-white shadow-md transition-shadow hover:shadow-xl"
+      className="group block overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-xl"
       style={{
         border: '0.5px solid rgba(0,0,0,0.08)',
         cursor: onCaseStudy ? 'pointer' : 'default',
@@ -45,9 +49,22 @@ export function FeaturedCard({
             {project.gallery && project.gallery.length > 0 ? (
               <MediaCarousel images={project.gallery} title={project.title} />
             ) : media?.type === 'video' ? (
-              <video src={media.src} autoPlay muted loop playsInline className="w-full" style={{ display: 'block' }} />
+              <video
+                src={media.src}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                style={{ display: 'block' }}
+              />
             ) : media?.type === 'image' ? (
-              <img src={media.src} alt={media.alt ?? project.title} className="w-full" style={{ display: 'block' }} />
+              <img
+                src={media.src}
+                alt={media.alt ?? project.title}
+                className="w-full transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                style={{ display: 'block' }}
+              />
             ) : (
               <div className="flex h-full min-h-[200px] items-center justify-center">
                 <span className="font-serif text-[38px] tracking-[-0.02em] text-oasis-accent">
@@ -79,8 +96,9 @@ export function FeaturedCard({
           )}
           <div className="flex flex-wrap items-center gap-2">
             {onCaseStudy && (
-              <span className="inline-flex items-center rounded-xl bg-oasis-ink px-5 py-2.5 text-[13px] font-medium text-oasis-bg transition-opacity hover:opacity-80 lg:text-[14px]">
-                Case study →
+              <span className="group/btn inline-flex items-center gap-1.5 rounded-xl bg-oasis-ink px-5 py-2.5 text-[13px] font-medium text-oasis-bg transition-opacity hover:opacity-85 lg:text-[14px]">
+                Case study
+                <span className="inline-block transition-transform duration-200 ease-out group-hover/btn:translate-x-1">→</span>
               </span>
             )}
             {project.url && (
@@ -89,9 +107,10 @@ export function FeaturedCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={(e) => e.stopPropagation()}
-                className="inline-flex items-center rounded-xl border border-oasis-ink/20 px-5 py-2.5 text-[13px] font-medium text-oasis-ink transition-colors hover:bg-oasis-chip lg:text-[14px]"
+                className="group/btn inline-flex items-center gap-1.5 rounded-xl border border-oasis-ink/20 px-5 py-2.5 text-[13px] font-medium text-oasis-ink transition-colors hover:bg-oasis-chip lg:text-[14px]"
               >
-                Visit site ↗
+                Visit site
+                <span className="inline-block transition-transform duration-200 ease-out group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5">↗</span>
               </a>
             )}
           </div>
@@ -104,7 +123,7 @@ export function FeaturedCard({
 export function PlaceholderCard({ project }: { project: Project }) {
   return (
     <div
-      className="overflow-hidden rounded-2xl bg-white transition-shadow hover:shadow-sm"
+      className="overflow-hidden rounded-2xl bg-white transition-all duration-300 ease-out hover:-translate-y-0.5 hover:shadow-md"
       style={{ border: '0.5px dashed rgba(0,0,0,0.15)' }}
     >
       <div className="relative flex h-[130px] items-center justify-center bg-oasis-chip lg:h-[160px]">

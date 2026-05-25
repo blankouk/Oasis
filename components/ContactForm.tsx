@@ -86,9 +86,16 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="rounded-xl bg-oasis-accent px-6 py-3 text-[14px] font-medium text-white transition-[filter] hover:brightness-110 disabled:opacity-60 lg:px-8 lg:py-4 lg:text-[15px]"
+                className="group inline-flex items-center gap-1.5 rounded-xl bg-oasis-accent px-6 py-3 text-[14px] font-medium text-white transition-all duration-200 ease-out hover:brightness-110 hover:shadow-lg hover:-translate-y-0.5 disabled:opacity-60 disabled:hover:translate-y-0 disabled:hover:shadow-none lg:px-8 lg:py-4 lg:text-[15px]"
               >
-                {status === 'loading' ? 'Sending…' : 'Send enquiry →'}
+                {status === 'loading' ? (
+                  'Sending…'
+                ) : (
+                  <>
+                    Send enquiry
+                    <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1">→</span>
+                  </>
+                )}
               </button>
 
               {status === 'success' && (

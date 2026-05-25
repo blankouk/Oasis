@@ -17,7 +17,10 @@ export default function Hero() {
           className="mb-6 inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5 text-[12px] text-oasis-muted sm:mb-8 lg:mb-10 lg:text-[13px]"
           style={{ border: '0.5px solid rgba(0,0,0,0.08)' }}
         >
-          <span className="h-1.5 w-1.5 rounded-full bg-oasis-success" />
+          <span className="relative flex h-1.5 w-1.5">
+            <span className="absolute inline-flex h-full w-full rounded-full bg-oasis-success animate-live-ping" />
+            <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-oasis-success" />
+          </span>
           Available for new projects
         </div>
 
@@ -38,13 +41,14 @@ export default function Hero() {
         <div className="flex flex-wrap gap-3">
           <a
             href="#contact"
-            className="rounded-xl bg-oasis-ink px-6 py-3 text-[14px] font-medium text-oasis-bg transition-opacity hover:opacity-85 lg:px-8 lg:py-4 lg:text-[15px]"
+            className="group inline-flex items-center gap-1.5 rounded-xl bg-oasis-ink px-6 py-3 text-[14px] font-medium text-oasis-bg transition-all duration-200 ease-out hover:opacity-85 hover:shadow-lg lg:px-8 lg:py-4 lg:text-[15px]"
           >
-            Start a project →
+            Start a project
+            <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1">→</span>
           </a>
           <a
             href="#work"
-            className="rounded-xl px-6 py-3 text-[14px] text-oasis-ink transition-colors hover:bg-oasis-chip lg:px-8 lg:py-4 lg:text-[15px]"
+            className="rounded-xl px-6 py-3 text-[14px] text-oasis-ink transition-colors duration-200 hover:bg-oasis-chip lg:px-8 lg:py-4 lg:text-[15px]"
             style={{ border: '0.5px solid rgba(0,0,0,0.15)' }}
           >
             See work

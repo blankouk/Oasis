@@ -60,7 +60,7 @@ export function ProjectModal({ project, onClose }: Props) {
           </div>
           <button
             onClick={handleClose}
-            className="flex h-8 w-8 items-center justify-center rounded-full bg-oasis-chip text-[18px] leading-none text-oasis-muted transition-colors hover:bg-oasis-chip/70"
+            className="flex h-8 w-8 items-center justify-center rounded-full bg-oasis-chip text-[18px] leading-none text-oasis-muted transition-all duration-200 ease-out hover:rotate-90 hover:bg-oasis-ink hover:text-white"
             aria-label="Close"
           >
             ×
@@ -133,9 +133,10 @@ export function ProjectModal({ project, onClose }: Props) {
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex shrink-0 items-center rounded-xl bg-oasis-ink px-5 py-2.5 text-[13px] font-medium text-oasis-bg transition-opacity hover:opacity-80"
+                  className="group inline-flex shrink-0 items-center gap-1.5 rounded-xl bg-oasis-ink px-5 py-2.5 text-[13px] font-medium text-oasis-bg transition-all duration-200 ease-out hover:opacity-85 hover:shadow-md"
                 >
-                  Visit live site →
+                  Visit live site
+                  <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1">→</span>
                 </a>
               )}
             </div>

@@ -37,7 +37,7 @@ export default function Services() {
           {services.map((s) => (
             <div
               key={s.name}
-              className={`relative flex flex-col rounded-2xl p-6 lg:p-8 ${s.popular ? 'bg-oasis-accent-tint' : 'bg-oasis-bg'}`}
+              className={`relative flex flex-col rounded-2xl p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg lg:p-8 ${s.popular ? 'bg-oasis-accent-tint' : 'bg-oasis-bg'}`}
               style={{
                 border: s.popular ? '1.5px solid #FF6B35' : '0.5px solid rgba(0,0,0,0.08)',
               }}

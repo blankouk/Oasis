@@ -17,9 +17,10 @@ export default function CTABand() {
         </p>
         <a
           href="#contact"
-          className="inline-flex items-center rounded-xl bg-white px-6 py-3 text-[14px] font-medium text-oasis-accent transition-opacity hover:opacity-90 lg:px-8 lg:py-4 lg:text-[15px]"
+          className="group inline-flex items-center gap-1.5 rounded-xl bg-white px-6 py-3 text-[14px] font-medium text-oasis-accent transition-all duration-200 ease-out hover:shadow-lg hover:-translate-y-0.5 lg:px-8 lg:py-4 lg:text-[15px]"
         >
-          Start a project →
+          Start a project
+          <span className="inline-block transition-transform duration-200 ease-out group-hover:translate-x-1">→</span>
         </a>
       </div>
     </section>
