@@ -77,13 +77,24 @@ export function FeaturedCard({
               ))}
             </div>
           )}
-          {onCaseStudy && (
-            <div>
+          <div className="flex flex-wrap items-center gap-2">
+            {onCaseStudy && (
               <span className="inline-flex items-center rounded-xl bg-oasis-ink px-5 py-2.5 text-[13px] font-medium text-oasis-bg transition-opacity hover:opacity-80 lg:text-[14px]">
                 Case study →
               </span>
-            </div>
-          )}
+            )}
+            {project.url && (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+                className="inline-flex items-center rounded-xl border border-oasis-ink/20 px-5 py-2.5 text-[13px] font-medium text-oasis-ink transition-colors hover:bg-oasis-chip lg:text-[14px]"
+              >
+                Visit site ↗
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>
