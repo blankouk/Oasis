@@ -12,7 +12,7 @@ export default function Process() {
       <div aria-hidden className="pointer-events-none absolute left-[-4%] top-[20%] hidden h-[11vw] w-[11vw] max-h-[140px] max-w-[140px] rounded-full bg-oasis-accent animate-blob lg:block" style={{ animationDelay: '3.5s' }} />
       <div aria-hidden className="pointer-events-none absolute right-[20%] top-[10%] hidden h-[5vw] w-[5vw] max-h-[60px] max-w-[60px] rounded-full bg-oasis-accent animate-blob lg:block" style={{ animationDelay: '1.5s' }} />
       <div aria-hidden className="pointer-events-none absolute left-[40%] bottom-[18%] hidden h-[4vw] w-[4vw] max-h-[50px] max-w-[50px] rounded-full bg-oasis-accent animate-blob lg:block" style={{ animationDelay: '5.5s' }} />
-      <div className="mx-auto max-w-[1200px] px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-28">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-28">
         <p className="mb-2 text-[11px] uppercase tracking-[0.12em] text-oasis-hint">How it works</p>
         <h2 className="mb-10 font-serif text-[34px] font-normal tracking-[-0.02em] sm:text-[44px] lg:mb-14 lg:text-[58px]">
           Simple{' '}

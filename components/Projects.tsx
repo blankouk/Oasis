@@ -15,7 +15,7 @@ export default function Projects() {
       <div aria-hidden className="pointer-events-none absolute left-[6%] top-[45%] hidden h-[5vw] w-[5vw] max-h-[60px] max-w-[60px] rounded-full bg-oasis-accent animate-blob lg:block" style={{ animationDelay: '1.5s' }} />
       <div aria-hidden className="pointer-events-none absolute right-[12%] bottom-[8%] hidden h-[4vw] w-[4vw] max-h-[50px] max-w-[50px] rounded-full bg-oasis-accent animate-blob lg:block" style={{ animationDelay: '7s' }} />
       <div aria-hidden className="pointer-events-none absolute left-[10%] bottom-[40%] hidden h-[5vw] w-[5vw] max-h-[55px] max-w-[55px] rounded-full bg-oasis-accent animate-blob lg:block" style={{ animationDelay: '2.5s' }} />
-      <div className="mx-auto max-w-[1200px] px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-28">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-28">
         <div className="mb-8 flex items-end justify-between lg:mb-12">
           <div>
             <p className="mb-2 text-[11px] uppercase tracking-[0.12em] text-oasis-hint">Selected work</p>

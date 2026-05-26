@@ -27,7 +27,7 @@ export default function Hero() {
         style={{ animationDelay: '6s' }}
       />
 
-      <div className="mx-auto max-w-[1200px] px-6 pb-20 pt-16 sm:px-10 sm:pb-24 sm:pt-20 lg:px-16 lg:pb-32 lg:pt-28">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 pb-20 pt-16 sm:px-10 sm:pb-24 sm:pt-20 lg:px-16 lg:pb-32 lg:pt-28">
         {/* Available pill */}
         <div
           className="mb-6 inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-1.5 text-[12px] text-oasis-muted sm:mb-8 lg:mb-10 lg:text-[13px]"

@@ -7,7 +7,7 @@ export default function CTABand() {
       <div aria-hidden className="pointer-events-none absolute left-[8%] top-[15%] hidden h-[12vw] w-[12vw] max-h-[140px] max-w-[140px] rounded-full bg-white animate-blob-white lg:block" style={{ animationDelay: '5s' }} />
       <div aria-hidden className="pointer-events-none absolute left-[42%] bottom-[20%] hidden h-[5vw] w-[5vw] max-h-[60px] max-w-[60px] rounded-full bg-white animate-blob-white lg:block" style={{ animationDelay: '1.5s' }} />
 
-      <div className="mx-auto max-w-[1200px] px-6 py-16 text-white sm:px-10 sm:py-20 lg:px-16 lg:py-28">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-6 py-16 text-white sm:px-10 sm:py-20 lg:px-16 lg:py-28">
         <p className="mb-3 text-[11px] uppercase tracking-[0.18em] opacity-80 lg:text-[12px]">
           ★ Student-run, fair priced
         </p>
