@@ -1,3 +1,5 @@
+'use client';
+
 const team = [
   {
     name: 'Artem',
