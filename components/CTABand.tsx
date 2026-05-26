@@ -3,15 +3,13 @@
 const team = [
   {
     name: 'Artem',
-    role: 'Builder · Math & Stats',
-    bio: 'Sweats the details (probably too much).',
+    bio: 'Fun fact about me:',
     photo: '/artem.jpg',
     initials: 'A',
   },
   {
     name: 'Daniil',
-    role: 'Builder · Fullstack',
-    bio: 'Ships fast, breaks little.',
+    bio: 'Fun fact about me:',
     photo: '/daniil.jpg',
     initials: 'D',
   },
@@ -49,41 +47,43 @@ export default function CTABand() {
           </div>
 
           {/* Right: team cards */}
-          <div className="flex flex-col gap-3 lg:gap-4">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="flex items-center gap-4 rounded-2xl border border-white/25 bg-white/[0.08] p-4 backdrop-blur-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-white/[0.12] lg:p-5"
-              >
-                {/* Avatar */}
-                <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full bg-white/15 lg:h-16 lg:w-16">
-                  <span className="absolute inset-0 flex items-center justify-center font-serif text-[22px] lg:text-[26px]">
-                    {member.initials}
-                  </span>
-                  <img
-                    src={member.photo}
-                    alt={member.name}
-                    className="relative h-full w-full object-cover"
-                    onError={(e) => {
-                      (e.currentTarget as HTMLImageElement).style.display = 'none';
-                    }}
-                  />
-                </div>
+          <div>
+            <p className="mb-3 text-[11px] uppercase tracking-[0.18em] opacity-80 lg:mb-4 lg:text-[12px]">
+              Our team
+            </p>
+            <div className="flex flex-col gap-3 lg:gap-4">
+              {team.map((member) => (
+                <div
+                  key={member.name}
+                  className="flex items-center gap-4 rounded-2xl border border-white/25 bg-white/[0.08] p-4 backdrop-blur-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-white/[0.12] lg:p-5"
+                >
+                  {/* Avatar */}
+                  <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-full bg-white/15 lg:h-16 lg:w-16">
+                    <span className="absolute inset-0 flex items-center justify-center font-serif text-[22px] lg:text-[26px]">
+                      {member.initials}
+                    </span>
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="relative h-full w-full object-cover"
+                      onError={(e) => {
+                        (e.currentTarget as HTMLImageElement).style.display = 'none';
+                      }}
+                    />
+                  </div>
 
-                {/* Info */}
-                <div className="min-w-0">
-                  <div className="text-[15px] font-medium leading-tight lg:text-[16px]">
-                    {member.name}
+                  {/* Info */}
+                  <div className="min-w-0">
+                    <div className="text-[15px] font-medium leading-tight lg:text-[16px]">
+                      {member.name}
+                    </div>
+                    <p className="mt-1.5 text-[12px] leading-snug opacity-80 lg:text-[13px]">
+                      {member.bio}
+                    </p>
                   </div>
-                  <div className="mt-0.5 text-[11px] uppercase tracking-[0.08em] opacity-75 lg:text-[12px]">
-                    {member.role}
-                  </div>
-                  <p className="mt-1.5 text-[12px] leading-snug opacity-80 lg:text-[13px]">
-                    {member.bio}
-                  </p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
