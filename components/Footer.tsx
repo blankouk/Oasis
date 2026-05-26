@@ -7,9 +7,20 @@ export default function Footer() {
           <span>© 2026 Oasis Studio</span>
         </div>
         <div className="flex items-center gap-5">
-          <a href="#" className="transition-colors hover:text-oasis-ink">LinkedIn</a>
-          <a href="#" className="transition-colors hover:text-oasis-ink">YouTube</a>
-          <a href="mailto:hello@oasis.studio" className="transition-colors hover:text-oasis-ink">hello@oasis.studio</a>
+          <a
+            href="https://www.linkedin.com/in/artem-belozertsev-8a9270372/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-oasis-ink"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:oasisssstudio@gmail.com"
+            className="transition-colors hover:text-oasis-ink"
+          >
+            oasisssstudio@gmail.com
+          </a>
         </div>
       </div>
     </footer>

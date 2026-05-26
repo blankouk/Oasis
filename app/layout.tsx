@@ -18,7 +18,7 @@ const instrumentSerif = Instrument_Serif({
 export const metadata: Metadata = {
   title: 'Oasis Studio — Web things, crafted with care.',
   description:
-    'Independent dev studio building modern web apps, landing pages and MVPs. Run by Artem — student, builder, occasional perfectionist.',
+    'Independent dev studio building modern web apps, landing pages and MVPs. Run by Artem and Daniil — students and builders.',
   openGraph: {
     title: 'Oasis Studio',
     description: 'Web things, crafted with care.',

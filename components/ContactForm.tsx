@@ -41,9 +41,27 @@ export default function ContactForm() {
             <h2 className="mb-4 font-serif text-[30px] font-normal tracking-[-0.02em] sm:text-[36px] lg:text-[48px]">
               Got an idea?
             </h2>
-            <p className="max-w-[320px] text-[15px] leading-relaxed text-oasis-muted lg:text-[16px]">
-              Drop a line — I usually reply within a day. No sales pitch, just a real conversation.
+            <p className="mb-6 max-w-[320px] text-[15px] leading-relaxed text-oasis-muted lg:text-[16px]">
+              Drop a line — we usually reply within a day. No sales pitch, just a real conversation.
             </p>
+            <div className="flex flex-col gap-2 text-[14px]">
+              <a
+                href="mailto:oasisssstudio@gmail.com"
+                className="inline-flex items-center gap-2 text-oasis-ink transition-colors hover:text-oasis-accent"
+              >
+                <span className="text-oasis-hint">@</span>
+                oasisssstudio@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/artem-belozertsev-8a9270372/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-oasis-ink transition-colors hover:text-oasis-accent"
+              >
+                <span className="text-oasis-hint">in</span>
+                LinkedIn
+              </a>
+            </div>
           </div>
 
           {/* Right — form */}

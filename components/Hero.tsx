@@ -50,7 +50,7 @@ export default function Hero() {
         {/* Subtext */}
         <p className="mb-8 max-w-[480px] text-[15px] leading-relaxed text-oasis-muted sm:mb-10 sm:text-[16px] lg:mb-12 lg:max-w-[520px] lg:text-[18px]">
           Independent dev studio building modern web apps, landing pages and MVPs.
-          Run by Artem — student, builder, occasional perfectionist.
+          Run by Artem and Daniil — students and builders.
         </p>
 
         {/* CTAs */}
